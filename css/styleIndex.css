@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+
+.card:hover {
+    transition: .3s;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-6%);
+}
+
+.navegador {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+.nav-icon {
+    color: black;
+}
+
+.nav-icon:hover {
+    color: rgb(0, 174, 255); 
+}
+
+span {
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+.productos {
+    width: 95%;
+    height: 80%;
+}
+
+.productos img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.productos img:hover {
+    cursor: crosshair;
+    width: 20%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* boton arriba */
+.boton-up {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+.boton-up:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.titulo { 
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.links li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.links li:hover {
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+.links li::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.links li:hover::before {
+    opacity: 1;
+}
+
+.links li::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+.links li:hover::after {
+    opacity: 0.5;
+}
+
+.links li i{
+    color: #777;
+    font-size: 1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.links li:hover i {
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+}
+
+.links li span {
+    position: absolute;
+}
+
+.links li .titulo {
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.links li:hover .titulo {
+    transform: scale(1);
+    transition-delay: 0.25s;
+}

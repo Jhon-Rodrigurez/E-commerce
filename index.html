@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de ventas online front-end">
+    <title>E-commerce</title>
+    <link rel="icon" href="https://steelconstrucciones.com.ar/wp-content/uploads/2020/06/tienda-online-icono-vectorial-aislado-sobre-fondo-transparente-transparencia-concepto-logotipo-tienda-online-r1r4t5-1.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+</head>
+<body>
+    <header>
+      <!-- Navegador de pagina -->
+        <nav class="navegador navbar navbar-expand-lg animate__animated animate__backInDown">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold mx-4 fs-3 animate__animated animate__heartBeat animate__infinite" href="./index.html"><span>$</span>hopify</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" aria-current="page" href="/index.html"><i class="fa-solid fa-house mx-2"></i>Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" href="./pages/comprar.html"><i class="fa-solid fa-cart-shopping mx-2"></i>Comprar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" href="./pages/servicios.html"><i class="fa-solid fa-headphones mx-2"></i>Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" href="./pages/contactanos.html"><i class="fa-solid fa-phone mx-2"></i>Contáctanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seccion de bienvenida -->
+    <section class="mt-5 mb-5 animate__animated animate__bounceIn animate__delay-1s animate__slow 1s">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="fw-bold animate__animated animate__rubberBand animate__delay-2s animate__repeat-2">$hopify: <span>nuestro sitio web de ventas online</span></h3>
+              <p class="justify-content-center">
+                Explora nuestras categorías, descubre ofertas emocionantes y encuentra esos productos que
+                mejorarán tu vida cotidiana. Estamos comprometidos con tu satisfacción y queremos asegurarnos
+                de que tu experiencia de compra sea cómoda, emocionante y sin complicaciones.
+              </p>
+              <p>
+                Siempre estamos abiertos a tus comentarios y sugerencias. Tu opinión es importante para nosotros,
+                ya que nos ayuda a mejorar y a ofrecer productos que realmente se adapten a tus necesidades y
+                gustos.
+              </p>
+          </div>
+          
+          <!-- Carrusel de bootstrap -->
+          <div class="col-md-6">
+            <div id="carrusel1" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="./assets/images/imagenCarrusel1.png" class="d-block w-100" alt="imagen de carrusel de inicio">
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./assets/images/imagenCarrusel2.jpg" class="d-block w-100" alt="imagen de carrusel de inicio">
+                </div>
+                  
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./assets/images/imagenCarrusel3.jpg" class="d-block w-100" alt="imagen de carrusel de inicio">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <hr>
+
+    <!-- Seccion de mostrar los productos -->
+    <section>
+      <h3 class="text-center mt-5 mb-5 fw-bold animate__animated animate__wobble animate__delay-2s animate__slow 3s">Nuestros <span>productos</span></h3>
+    </section>
+
+    <!-- Imagenes de los productos -->
+    <section class="productos m-2 text-center d-flex animate__animated animate__rotateIn animate__delay-2s animate__slower 2s">
+      <img src="./assets/images/equipoSonido.jpg" alt="imagen de carrusel 3D">
+      <img src="./assets/images/tv70.jpg" alt="imagen de carrusel 3D">
+      <img src="./assets/images/Ps5.png" alt="imagen de carrusel 3D">
+      <img src="./assets/images/xboxSeriesX.jpg" alt="imagen de carrusel 3D">
+      <img src="./assets/images/IPhone14.jpg" alt="imagen de carrusel 3D">
+      <img src="./assets/images/SamsungS20.jpg" alt="imagen de carrusel 3D">
+      <img src="./assets/images/NintendoSwitch.jpg" alt="imagen de carrusel 3D">
+      <img src="./assets/images/freidoraAire.jpg" alt="imagen de carrusel 3D">
+    </section>
+
+    <div class="d-flex justify-content-center mt-4 mb-4">
+      <a href="./pages/comprar.html" class="btn btn-primary">Pulse aquí para ver catálogo</a>
+    </div>
+    
+    <hr>
+
+    <!-- Seccion de los servicios para el usuario -->
+    <section>
+      <h3 class="fw-bold text-center mt-5 animate__animated animate__flip animate__delay-3s animate__slower 2s"><span>UX/UI </span> user xperience</h3>
+        <p class="text-center">Garantizamos a nuestros clientes una experiencia de usuario intuitiva y agradable.</p>
+    </section>
+
+    <!-- Cards de servicios -->
+    <section class="text-center mt-3 animate__animated animate__backInDown animate__delay-1s animate__slow 2s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-5">
+            <div class="card">
+              <img src="./assets/images/UXatractivo.jpg" class="card-img-top" alt="Experiencia de usuario atractivo">
+                <div class="card-body contenido">
+                  <h5 class="card-title">Diseño atractivo</h5>
+                    <p class="card-text">Un buen diseño de un sitio web puede lograr una buena relación con el usuario final que interactúa con la página.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <div class="card">
+              <img src="./assets/images/UXaccesibilidad.png" class="card-img-top" alt="Experiencia de usuario accesible">
+                <div class="card-body contenido">
+                  <h5 class="card-title">Sitio accesible</h5>
+                    <p class="card-text">Le permite al usuario navegar de forma sencilla a través de los distintos botones y enlaces que ofrece el sitio web.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <div class="card">
+              <img src="./assets/images/UXcredibilidad.jpg" class="card-img-top" alt="Experiencia de usuario credibilidad">
+                <div class="card-body contenido">
+                  <h5 class="card-title">Credibilidad</h5>
+                    <p class="card-text">El usuario se sentirá seguro cuando está usando nuestro sitio web y confianza en nuestro servicio.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boton de ir hacia arriba -->
+    <!-- <div class="boton-up d-flex justify-content-center align-items-center border rounded-5" id="boton-up">
+      <i class="fa-sharp fa-solid fa-chevron-up fa-xl"></i>
+    </div> -->
+
+    <!-- Pie de página -->
+    <footer class="text-white text-center mt-5 text-lg-start bg-primary">
+      <div class="container p-4">
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h4 class="text-uppercase mb-4 text-center fw-semibold">Desarrollado por:</h4>
+            <h5 class="text-uppercase mb-4 text-center">Jhon Rodríguez</h5>
+
+            <!-- Enlaces de páginas -->
+            <div class="mt-4 text-center">  
+              <a href="https://www.linkedin.com/in/jhon-rodr%C3%ADguez-974a9b259/" target="_blank" type="button" class="botones-redes btn btn-floating btn-light btn-lg rounded-5 ms-2 mx-2">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Jhon-Rodrigurez" target="_blank" type="button" class="botones-redes btn btn-floating btn-light btn-lg rounded-5 ms-2 mx-2">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" type="button" class="botones-redes btn btn-floating btn-light btn-lg rounded-5 ms-2 mx-2">
+                <i class="fab fa-google"></i>
+              </a>
+            </div>
+            <!-- Fin de enlaces de páginas -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023:
+        <p class="text-center">Todos los derechos reservados.</p>
+      </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Enlaces de scripts js de bootstrap y relativos-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    
+    <!-- <script src="./js/scriptInicio.js"></script> -->
+  </body>
+</html>

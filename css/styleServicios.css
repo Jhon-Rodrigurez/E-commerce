@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+
+.card:hover {
+    transition: .3s;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-6%);
+}
+
+.navegador {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+.nav-icon {
+    color: black;
+}
+
+.nav-icon:hover {
+    color: rgb(0, 174, 255); 
+}
+
+.seccion {
+    background: url(../assets/images/imagenServicios.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    padding: 30px 0;
+}
+
+span {
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}

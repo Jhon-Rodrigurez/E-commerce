@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de ventas online front-end">
+    <title>Comprar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="icon" href="https://steelconstrucciones.com.ar/wp-content/uploads/2020/06/tienda-online-icono-vectorial-aislado-sobre-fondo-transparente-transparencia-concepto-logotipo-tienda-online-r1r4t5-1.jpg">
+    <link rel="stylesheet" href="../css/styleComprarPage.css">
+</head>
+<body>
+    <header>
+        <!-- Navegador de pagina -->
+        <nav class="navegador navbar navbar-expand-lg animate__animated animate__backInDown">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold mx-4 fs-3 animate__animated animate__heartBeat animate__infinite" href="../index.html"><span id="logo-nav">$</span>hopify</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav animate__animated animate__backInRight">
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" aria-current="page" href="../index.html"><i class="icon-home fa-solid fa-house mx-2"></i>Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" href="./comprar.html"><i class="icon-shopping fa-solid fa-cart-shopping mx-2"></i>Comprar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" aria-current="page" href="./servicios.html"><i class="fa-solid fa-headphones mx-2"></i>Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold ms-4 nav-icon" href="./contactanos.html"><i class="fa-solid fa-phone mx-2"></i>Contáctanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Imagen de inicio con un texto -->
+    <article>
+        <section class="seccion mt-1 animate__animated animate__bounceInLeft animate__delay-1s animate__slow 1s">
+            <h3 class="fw-bold mt-2">Comprar productos</h3>
+            <h4 class="fw-semibold text-white text-center">Aquí puedes ver los productos disponibles y agregarlos al carrito.</h4>
+        </section>
+    </article>
+
+    <!-- Seccion de tarjetas para mostrar los productos -->
+    <section class="contenedor animate__animated animate__zoomInDown animate__delay-2s animate__slow 2s">
+        <!-- contenedor de elementos -->
+        <div class="contenedor-items row mb-2">
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">Equipo de sonido</span>
+                <img src="../assets/images/equipoSonido.jpg" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$1000000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">T.V. Samsung 70"</span>
+                <img src="../assets/images/tv70.jpg" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$3500000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">PlayStation 5</span>
+                <img src="../assets/images/Ps5.png" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$3500000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">Xbox Series X</span>
+                <img src="../assets/images/xboxSeriesX.jpg" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$3000000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">IPhone 14</span>
+                <img src="../assets/images/IPhone14.jpg" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$3000000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">Samsung S20</span>
+                <img src="../assets/images/SamsungS20.jpg" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$1500000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">Nintendo Switch</span>
+                <img src="../assets/images/NintendoSwitch.jpg" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$2000000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+
+            <div class="item justify-content-center border-primary">
+                <span class="titulo-item mb-3">Freidora de aire</span>
+                <img src="../assets/images/freidoraAire.jpg" alt="imagen de fondo" class="img-item img-fluid">
+                <span class="precio-item">$650000</span>
+                <button class="boton-item fw-bold">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- carrito de compras -->
+        <div class="carrito border-primary rounded-3">
+            <div class="header-carrito">
+                <h3 class="fw-bold"><i class="fa-brands fa-shopify mx-3"></i>Mi <span class="titulo-compra">carrito</span></h3>
+            </div>
+
+            <div class="carrito-items border-primary">
+                
+            </div>
+
+            <div class="carrito-total px-5 py-5">
+                <div class="fila">
+                    <strong class="fw-semibold fs-5">Total a pagar</strong>
+                    <span class="carrito-precio-total fw-bold">
+                        $0,00
+                    </span>
+                </div>
+                <button class="btn-pagar fw-bold fs-4 text-white">Pagar <i class="fa-solid fa-sack-dollar"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boton de ir hacia arriba -->
+    <!-- <div class="boton-up d-flex justify-content-center align-items-center border rounded-5" id="boton-up">
+        <i class="fa-sharp fa-solid fa-chevron-up fa-xl"></i>
+    </div> -->
+
+    <!-- Pie de pagina -->
+    <footer class="text-white text-center mt-5 text-lg-start bg-primary">
+        <div class="container p-4">  
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h4 class="text-uppercase mb-4 text-center fw-semibold">Desarrollado por:</h4>
+                    <h5 class="text-uppercase mb-4 text-center">Jhon Rodríguez</h5>
+
+                    <!-- Enlaces de paginas -->
+                    <div class="mt-4 text-center">
+                        <a href="https://www.linkedin.com/in/jhon-rodr%C3%ADguez-974a9b259/" target="_blank" type="button" class="botones-redes btn btn-floating btn-light btn-lg rounded-5 ms-2 mx-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Jhon-Rodrigurez" target="_blank" type="button" class="botones-redes btn btn-floating btn-light btn-lg rounded-5 ms-2 mx-2">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" type="button" class="botones-redes btn btn-floating btn-light btn-lg rounded-5 ms-2 mx-2">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                    <!-- Fin de enlaces de paginas -->
+                </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023:
+          <p class="text-center">Todos los derechos reservados.</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Enlaces de scripts de bootstrap y relativos -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="../js/scriptComprar.js" async></script>
+</body>
+</html>
